@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables</title>
+    <style>
+        table, td {
+            border: solid grey;
+        }
+        th {
+            border-collapse: collapse;
+            border: solid plum;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tables</h1>
+    <h3>Simple Table</h3>
+    
+    <table>
+        <tr><td>One</td><td>Two</td><td>Three</td></tr>
+        <tr><td>Four</td><td>Five</td><td>Six</td></tr>
+        <tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+    </table><br><br>
+
+    <h3>Table with Headings</h3>
+    <table>
+        <tr><th>Row One</th><th>Row Two</th><th>Row Three</th></tr>
+        <tr><td>One</td><td>Two</td><td>Three</td></tr>
+        <tr><td>Four</td><td>Five</td><td>Six</td></tr>
+        <tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+    </table><br><br>
+
+    <h3>Merge Cell</h3>
+    <table>
+        <tr><th>Parent's Name</th><th>Child's Name</th></tr>
+        <tr><td rowspan="3">Roman</td><td>Noah</td></tr>
+        <tr><td>Kane</td></tr>
+        <tr><td>Cora</td></tr>
+        <tr><td>Zubair</td><td>Hassan</td></tr>
+        <tr><td rowspan="2">Shahzad</td><td>Taha</td></tr>
+        <tr><td>Laiba</td></tr>
+        <tr><td>Aleem</td><td rowspan="2">Saad</td></tr>
+        <tr><td>Shumaila</td></tr>
+    </table><br><br>
+
+    <h3>Center Aligned</h3>
+    <table class="center">
+        <tr><th>Row One</th><th>Row Two</th><th>Row Three</th></tr>
+        <tr><td>One</td><td>Two</td><td>Three</td></tr>
+        <tr><td>Four</td><td>Five</td><td>Six</td></tr>
+        <tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+    </table><br><br>
+</body>
+</html>

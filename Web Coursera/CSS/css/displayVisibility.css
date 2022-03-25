@@ -1,0 +1,19 @@
+span{
+    height: 50px;
+    width: 75px;
+    background: yellowgreen;
+    display: inline-block;
+}
+
+div{
+    height: 90px;
+    width: 45%;
+    background: #00ffff;
+    align-content: center;
+}
+
+p{
+    background: #ff00ff;
+    width: 200px;
+    height: 100px;
+}
