@@ -1432,11 +1432,9 @@ img {
 }
 
 .img-responsive {
-  display: block;
-  max-width: 100%;
+  max-width: 80%;
+  height: auto;
   border-radius: 20px;
-  margin-left: 9%;
-  height: 300px;
 }
 
 .img-responsive-profile {
