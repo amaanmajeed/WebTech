@@ -1,0 +1,28 @@
+header{
+    color: white;
+    background-color: lightgray;
+}
+
+a{
+    color: black;
+    background-color: #DCDCDC;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main{
+    background-color: grey;
+}
+
+
+h2{
+    color: rgb(5, 5, 146);
+    text-transform: uppercase;
+}
+
+img{
+    display: none;
+}
