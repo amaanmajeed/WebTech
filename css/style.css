@@ -5,8 +5,16 @@
   font-weight: normal;
   font-style: normal;
 }
-html {
-  background: rgba(255, 255, 255, 0.836);
+
+:root{
+  --primary-color: #121212;
+  --secondary-color: #fff;
+}
+
+.dark-theme{
+    transition: all 0.5s ease;
+  --primary-color: var(--secondary-color);
+  --secondary-color: #121212;
 }
 
 body {
@@ -14,25 +22,25 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
-  color: #222;
-  background: #fff;
+  color: var(--primary-color);
+  background: var(--secondary-color);
 }
 body.fh5co-overflow {
   overflow-x: auto;
 }
 
 ::-webkit-selection {
-  color: #fff;
+  color: var(--secondary-color);
   background: #f7c873;
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: var(--secondary-color);
   background: #f7c873;
 }
 
 ::selection {
-  color: #fff;
+  color: var(--secondary-color);
   background: #f7c873;
 }
 
@@ -50,7 +58,7 @@ a:hover, a:focus, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", times, serif;
-  color: #000;
+  color: var(--primary-color);
 }
 
 .headertags{
@@ -91,7 +99,7 @@ p {
 
 .btn-primary {
   background: #f7c873;
-  color: #fff;
+  color: var(--secondary-color);
   border: 2px solid #f7c873;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -105,12 +113,12 @@ p {
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #f7c873;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-success {
   background: #58ca7e;
-  color: #fff;
+  color: var(--secondary-color);
   border: 2px solid #58ca7e;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
@@ -124,12 +132,12 @@ p {
 }
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #58ca7e;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-info {
   background: #1784fb;
-  color: #fff;
+  color: var(--secondary-color);
   border: 2px solid #1784fb;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active {
@@ -143,12 +151,12 @@ p {
 }
 .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
   background: #1784fb;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-warning {
   background: #fed330;
-  color: #fff;
+  color: var(--secondary-color);
   border: 2px solid #fed330;
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
@@ -162,12 +170,12 @@ p {
 }
 .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
   background: #fed330;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-danger {
   background: #fb4f59;
-  color: #fff;
+  color: var(--secondary-color);
   border: 2px solid #fb4f59;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
@@ -181,7 +189,7 @@ p {
 }
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
   background: #fb4f59;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-outline {
@@ -288,7 +296,7 @@ p {
   text-align: center;
 }
 #fh5co-header #fh5co-logo a {
-  color: #000;
+  color: var(--primary-color);
 }
 #fh5co-header #fh5co-logo a sup {
   font-size: 20px;
@@ -302,7 +310,7 @@ p {
   top: 50%;
   height: 50px;
   margin-top: -25px;
-  color: #000;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-weight: bold;
   -webkit-transition: 0.5s;
@@ -330,7 +338,7 @@ p {
   top: 7px;
   position: relative;
   font-size: 30px;
-  color: #000;
+  color: var(--primary-color);
 }
 
 .fh5co-post-prev {
@@ -339,7 +347,7 @@ p {
 }
 .fh5co-post-prev:hover {
   margin-left: 10px;
-  color: #000;
+  color: var(--primary-color);
 }
 @media screen and (max-width: 768px) {
   .fh5co-post-prev {
@@ -354,7 +362,7 @@ p {
 }
 .fh5co-post-next:hover {
   margin-right: 10px;
-  color: #000;
+  color: var(--primary-color);
 }
 @media screen and (max-width: 768px) {
   .fh5co-post-next {
@@ -419,11 +427,11 @@ p {
 .fh5co-post-entry article h2 {
   font-family: "Playfair Display", times, serif;
   font-size: 34px;
-  color: #000;
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 .fh5co-post-entry article h2 a {
-  color: #000;
+  color: var(--primary-color);
 }
 @media screen and (max-width: 992px) {
   .fh5co-post-entry article h2 {
@@ -497,7 +505,7 @@ p {
 }
 .fh5co-post-entry article .fh5co-highlight p {
   font-family: "Playfair Display", times, serif;
-  color: #000;
+  color: var(--primary-color);
   font-size: 20px;
 }
 
@@ -515,7 +523,7 @@ p {
 .fh5co-social li a {
   font-size: 20px;
   padding: 4px;
-  color: #000;
+  color: var(--primary-color);
 }
 
 figure figcaption {
@@ -525,7 +533,7 @@ figure figcaption {
 }
 
 #fh5co-offcanvas {
-  background: #fff;
+  background: var(--secondary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -561,7 +569,7 @@ figure figcaption {
 }
 #fh5co-offcanvas .fh5co-close-offcanvas:hover {
   width: 85px;
-  color: #000;
+  color: var(--primary-color);
 }
 #fh5co-offcanvas .fh5co-close-offcanvas > span {
   width: 100px;
@@ -634,7 +642,7 @@ figure figcaption {
   display: block;
 }
 #fh5co-offcanvas .fh5co-menu ul li a {
-  color: #000;
+  color: var(--primary-color);
 }
 
 #fh5co-footer {

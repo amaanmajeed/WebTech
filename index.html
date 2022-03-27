@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A Website to display Web Tech Assignments" />
 	<meta name="keywords" content="Web Tech Assignments , Course , HTML , CSS" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="author" content="Amaan Majeed" />
 
 
 	
@@ -85,7 +85,7 @@
 					<li><a href="https://www.facebook.com/amaan.majid" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/amaan-majeed-285aa01b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
 					<li><a href="https://github.com/amaanmajeed/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-
+					<li><img src="images/moon.png" id = "icon"></li>
 				</ul>
 				<div class="col-lg-12 col-md-12 text-center">
 					<h1 id="fh5co-logo"><a>Web Technologies Websites</a></h1>
@@ -334,6 +334,18 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<script>
+		var icon = document.getElementById("icon");
+		icon.onclick = function(){
+			document.body.classList.toggle("dark-theme");
+			if(document.body.classList.contains("dark-theme")){
+				icon.src = "images/sun.png";
+			}else{
+				icon.src = "images/moon.png";
+			}
+		}
+	</script>
 
 	</body>
 </html>
