@@ -17,6 +17,11 @@
   --secondary-color: #121212;
 }
 
+#icon{
+  width: 25px;
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
