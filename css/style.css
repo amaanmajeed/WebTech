@@ -6,7 +6,7 @@
   font-style: normal;
 }
 html {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.836);
 }
 
 body {
@@ -51,6 +51,11 @@ a:hover, a:focus, a:active {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", times, serif;
   color: #000;
+}
+
+.headertags{
+  margin-left: 5%;
+  margin-bottom: 50px;
 }
 
 p {
