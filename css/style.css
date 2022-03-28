@@ -13,7 +13,7 @@
 
 .dark-theme{
     transition: all 0.5s ease;
-  --primary-color: var(--secondary-color);
+  --primary-color: #fff;
   --secondary-color: #121212;
 }
 
