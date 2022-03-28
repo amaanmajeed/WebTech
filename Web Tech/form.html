@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/3column.css">
+    <style>
+        html{
+            padding-left: 2%;
+            padding-bottom: 10%;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Text Forms</h2>
+    <form method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Ahmed"><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Ali"><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <br>
+
+
+    <h2>Radio Forms</h2>
+    <form method="post">
+        <input type="radio" name="fav_language" id="html" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="radio" name="fav_language" id="CSS" value="CSS">
+        <label for="CSS">CSS</label>
+
+        <input type="radio" name="fav_language" id="Javascript" value="Javascript">
+        <label for="radio">Javascript</label>
+    </form>
+    <br>
+
+    <h2>CheckBox</h2>
+    <form method="post">
+        <p>Vehicles you own</p>
+        <input type="checkbox" name="vehicles" id="car">
+        <label for="car">Car</label>
+
+        <input type="checkbox" name="vehicles" id="bike">
+        <label for="bike">Bike</label>
+
+        <input type="checkbox" name="vehicles" id="atv">
+        <label for="ATV">ATV</label>
+    </form>
+    <br>
+
+    <h2>DropDown</h2>
+    <form method="get">
+        <select name="cars" id="cars">
+            <option value = "volvo">Honda</option>
+            <option value = "saab">Toyota</option>
+            <option value = "fiat">Audi</option>
+            <option value = "audi">Vego</option>
+        </select>
+    </form>
+
+    <br>
+    <h2>Text Area</h2>
+    <textarea name="message" rows="3" cols="50">
+        The cat was playing in the garden.
+    </textarea>
+
+            <br>
+    <h2>Button</h2>
+    <button type="button" onclick="alert('Hello Jee')">Click Me!</button>
+
+    <br>
+    <h2>fieldset</h2>
+    <form method="get">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+      <br>
+      <h2>Datalist</h2>
+      <form method="get">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer" id="ie">
+          <option value="Firefox" id="ff">
+          <option value="Chrome" id="c">
+          <option value="Opera" id="o">
+          <option value="Safari" id="s">
+        </datalist>
+      </form>
+
+      <br>
+      <h2>The output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+
+    <form method="get"
+    oninput= "x.value = parseInt(a.value) + parseInt(b.value)" > 0
+    <input type="range" id="a" name="a" value="50" > 100 +
+    <input type="number" id="b" name="b" value="50" > =
+    <output name="x" for="a b"></output>
+    <br>
+    </form>
+
+    <br>
+    <h2>Passwords</h2>
+    <form method="get">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="ahmedali12"><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="********">
+    </form>
+
+
+    <h2>Colour Picker</h2>
+    <form method="get">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </form>
+
+    <br>
+    <h2>Dates</h2>
+    <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+      </form>
+
+    
+      <br>
+      <h2>Date and Time</h2>
+      <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </form>
+
+      <br>
+      <h2>Input Month</h2>
+      <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+      </form>
+
+      <br>
+      <h2>Time</h2>
+      <form>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+      </form>
+
+      <br>
+      <h2>Email</h2>
+      <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+      </form>
+
+      <br>
+      <h2>MyFile</h2>
+      <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+
+      <br>
+      <h2>Hidden Input Type</h2>
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+      </form>      
+
+      <br>
+      <h2>Input Number</h2>
+      <form>
+        <label for="quantity">Quantity (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+      </form>
+
+      <br>
+      <h2>Quantity</h2>
+      <form>
+        <label for="quantity">Quantity: - Initially set to 50</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="50">
+      </form>
+
+      <br>
+      <h2>Input Type Range Volume Slider</h2>
+      <form>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+      </form>
+
+      <br>
+      <h2>Search</h2>
+      <form>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+      </form>
+
+      <br>
+      <h2>Phone Number</h2>
+      <form>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="03**-**-*****">
+      </form>
+
+      <br>
+      <h2>URL</h2>
+      <form>
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+      </form>
+
+</body>
+</html>
