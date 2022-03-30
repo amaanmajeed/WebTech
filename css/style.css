@@ -7,14 +7,14 @@
 }
 
 :root{
-  --primary-color: #121212;
-  --secondary-color: #fff;
+  --primary-color: #fff;
+  --secondary-color: #121212;
 }
 
 .dark-theme{
     transition: all 0.5s ease;
-  --primary-color: #fff;
-  --secondary-color: #121212;
+  --primary-color: #121212;
+  --secondary-color: #fff;
 }
 
 #icon{
