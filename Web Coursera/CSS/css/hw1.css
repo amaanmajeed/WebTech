@@ -1,10 +1,10 @@
 header{
-    color: white;
-    background-color: lightgray;
+    color: #fff;
+    background-color: #d3d3d3;
 }
 
 a{
-    color: black;
+    color: #000;
     background-color: #DCDCDC;
 }
 
@@ -13,13 +13,13 @@ h1{
     text-transform: uppercase;
 }
 
-main{
-    background-color: grey;
+section{
+    background-color: #808080;
 }
 
 
 h2{
-    color: blue;
+    color: #00f;
     text-transform: uppercase;
 }
 
