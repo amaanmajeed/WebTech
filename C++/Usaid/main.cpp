@@ -49,8 +49,11 @@ void Search(int RollNo)
         {
             if (b->RollNo==RollNo)
             {
+                cout << "----------------------" << endl;
                 cout<<"Roll Number:\t"<<b->RollNo<<endl;
                 cout<< "Name:\t"<<b->name<<endl;
+                cout << "----------------------" << endl;
+                break;
             }
             b=b->next;
         }
@@ -59,7 +62,7 @@ void Search(int RollNo)
     }
 }
 
-void Modify(int RollNo, string name, string name1)
+void Modify(int RollNo, string name1)
 {
     node* temp=head;
     while(temp->RollNo!=RollNo)
@@ -68,7 +71,7 @@ void Modify(int RollNo, string name, string name1)
     }
     if(temp!=NULL && temp->RollNo==RollNo)
     {
-        name=name1;
+        temp -> name = name1;
     }
 }
 
@@ -103,6 +106,17 @@ void Delete(int RollNo)
     }
 }
 
+void printall()
+{
+    node* current = head;
+    while(current != NULL){
+        cout << current -> RollNo << endl;
+        cout << current -> name << endl;
+        current = current -> next;
+    }
+    cout << endl;
+}
+
 
 int main()
 {
@@ -120,7 +134,8 @@ int main()
         cout<<"2: Search a record."<<endl;
         cout<<"3: Modify a record."<<endl;
         cout<<"4: Delete a record."<<endl;
-        cout<<"5: Exit"<<endl;
+        cout<<"5: Print all the records"<<endl;
+        cout<<"6: Exit"<<endl;
         cout<<endl;
         cin>>choice;
 
@@ -131,7 +146,7 @@ int main()
             cout<<"\nPlease enter the Roll Number of student."<<endl;
             cin>>RollNo;
             cout<<"\nPlease enter the Name of student."<<endl;
-            cin>>name;
+            cin.ignore();getline(cin,name);
             Insert(RollNo,name);
             break;
         }
@@ -146,11 +161,9 @@ int main()
         {
             cout<<"Please enter the Roll Number you want to modify"<<endl;
             cin>>RollNo;
-            cout<<"Enter the previous name."<<endl;
-            cin>>name;
             cout<<"Enter the new Name."<<endl;
-            cin>>name1;
-            Modify(RollNo,name,name1);
+            cin.ignore();getline(cin,name1);
+            Modify(RollNo,name1);
             break;
         }
     case 4:
@@ -162,8 +175,15 @@ int main()
         }
     case 5:
         {
+            printall();
+            break;
+
+        }
+    case 6:
+        {
             break;
         }
+
         }
     }
     while(choice!=5);
